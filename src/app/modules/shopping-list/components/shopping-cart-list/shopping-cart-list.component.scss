@@ -1,0 +1,98 @@
+/* For Desktops, laptops, large screens */
+@media only screen and (min-width: 1025px) and (max-width: 1899px) {
+  .shopping-cart-item-wrapper {
+    height: 250px !important;
+  }
+}
+
+/* For  Extra large screens, TV */
+@media only screen and (min-width: 1900px) {
+  .shopping-cart-item-wrapper {
+    height: 530px !important;
+  }
+}
+
+.shopping-cart-item-count {
+  background-color: red;
+  color: white;
+  width: 20px;
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 20px;
+}
+
+input {
+  font-size: 14px;
+  width: 15rem;
+  border-radius: 4px;
+  border: 2px solid #CACFD2;
+}
+
+.error-msg {
+  color: red;
+}
+
+.discount-btn {
+  border: none;
+  width: 50%;
+  padding: 10px;
+  background-color: #D7DBDD;
+}
+.discount-btn:hover{
+  background-color: #82E0AA !important;
+}
+
+.total {
+  width: 100%;
+  background-color: #3498DB;
+  padding: 5px;
+}
+
+.submit-btn {
+  border: none;
+  width: 49%;
+  padding: 10px;
+  background-color: #D7DBDD;
+}
+.submit-btn:hover{
+  background-color: #82E0AA !important;
+}
+
+.generate-btn {
+  border: none;
+  width: 49%;
+  padding: 10px;
+  background-color: #D7DBDD;
+}
+.generate-btn:hover{
+  background-color: #82E0AA !important;
+}
+
+.shopping-cart-item-wrapper {
+  height: 250px;
+  overflow: auto;
+  border: 1px solid #E5E7E9;
+}
+
+.decreaseBtn {
+  width: 36px;
+  font-size: 27px;
+  background-color: #D7DBDD;
+  border: none;
+  margin-right: 5px;
+}
+.decreaseBtn:hover{
+  background-color: red !important;
+}
+
+.increaseBtn{
+  width: 36px;
+  font-size: 27px;
+  background-color: #D7DBDD;
+  border: none;
+}
+.increaseBtn:hover{
+  background-color: #82E0AA !important;
+}

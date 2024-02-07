@@ -1,0 +1,13 @@
+<div class="d-flex justify-content-between align-items-center" style="border-bottom: 2px solid #E5E7E9;">
+  <div class="d-flex align-items-center p-1">
+    <div>
+      <img [src]="item?.img" alt="laptop" class="shopping-cart-image" (error)="onImageError($event)">
+    </div>
+    <div>{{item?.name}}</div>
+  </div>
+  <div class="d-flex justify-content-between align-items-center px-1" style="width: 130px;">
+    <div class="quantity-count d-flex justify-content-center align-items-center">{{item?.quantity}}</div>
+    <div>${{item?.price}}</div>
+    <div><strong>${{item?.total}}</strong></div>
+  </div>
+</div>

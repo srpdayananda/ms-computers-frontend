@@ -1,0 +1,40 @@
+.computer-part-form {
+ width: 50%;
+}
+
+.submitBtn {
+  border: none;
+  padding: 10px;
+  background-color: #D7DBDD;
+  width: 11rem;
+}
+.submitBtn:hover{
+  background-color: #82E0AA !important;
+}
+
+.cancleBtn {
+  border: none;
+  padding: 10px;
+  background-color: #D7DBDD;
+  width: 11rem;
+}
+.cancleBtn:hover{
+  background-color: #F9EBEA !important;
+}
+
+.error-msg {
+  color: red;
+  margin-left: 8rem;
+}
+
+.image-wrapper {
+  width: 27rem;
+  height: 19rem;
+  border: 2px solid #D7DBDD;
+  padding: 20px;
+}
+
+.image-content {
+  width: 24rem;
+  height: 16rem;
+}

@@ -1,0 +1,59 @@
+/* For Desktops, laptops, large screens */
+@media only screen and (min-width: 1025px) and (max-width: 1899px) {
+  .shopping-cart {
+    width: 265px !important;
+  }
+}
+
+/* For  Extra large screens, TV */
+@media only screen and (min-width: 1900px) {
+  .shopping-cart {
+    width: 290px !important;
+  }
+}
+
+.shopping-cart {
+  width: 265px;
+  height: 200px;
+  background-color: #F2F3F4;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.shopping-cart-image {
+  width: 100px;
+  height: 97px;
+}
+
+.add-cart-btn {
+  width: 100%;
+  background-color: #82E0AA;
+  border: none;
+}
+
+.quantity-bar {
+ width: 120px;
+ margin-left: 16px;
+ border-radius: 5px;
+ border: 2px solid;
+}
+
+.quantity-btn-add {
+  padding-left: 9px;
+  width: 25px;
+  background-color: #BDC3C7;
+  cursor: pointer;
+}
+.quantity-btn-add:hover {
+  background-color: #82E0AA !important;
+}
+
+.quantity-btn-remove {
+  padding-left: 9px;
+  width: 25px;
+  background-color: #BDC3C7;
+  cursor: pointer;
+}
+.quantity-btn-remove:hover {
+  background-color: red !important;
+}

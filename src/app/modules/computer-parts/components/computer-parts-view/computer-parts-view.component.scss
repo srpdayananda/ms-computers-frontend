@@ -1,0 +1,63 @@
+/* For Desktops, laptops, large screens */
+@media only screen and (min-width: 1025px) and (max-width: 1899px) {
+  .table-overall {
+    height: 27rem !important;
+  }
+}
+
+/* For  Extra large screens, TV */
+@media only screen and (min-width: 1900px) {
+  .table-overall {
+    height: 45rem !important;
+  }
+}
+
+.addBtn {
+  border: none;
+  padding: 10px;
+  background-color: #D7DBDD;
+}
+.addBtn:hover{
+  background-color: #82E0AA !important;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  table-layout: fixed;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+th:first-child, td:first-child {
+  width: 30px;
+}
+
+th:last-child, td:last-child {
+  width: 80px;
+}
+
+.table-overall {
+  height: 27rem;
+  overflow: auto;
+}
+
+.edit-icon {
+  color: #82E0AA;
+  width: 20px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  width: 20px;
+  cursor: pointer;
+}

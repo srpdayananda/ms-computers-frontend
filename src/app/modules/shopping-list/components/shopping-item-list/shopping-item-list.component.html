@@ -1,0 +1,5 @@
+<div style="display: flex; flex-wrap: wrap; overflow-x: auto;">
+  <div *ngFor="let item of shoppingItems">
+    <app-shopping-item [shoppingItem]="item" (shoppingCartItems)="onShoppingCartItems($event)"></app-shopping-item>
+  </div>
+</div>

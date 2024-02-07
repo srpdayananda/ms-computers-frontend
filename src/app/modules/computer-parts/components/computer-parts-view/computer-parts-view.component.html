@@ -1,0 +1,42 @@
+<div>
+  <div><strong>Computer Parts</strong></div>
+  <div class="pt-2">
+    <button class="addBtn" (click)="onAddNewItem()">+ New Computer Part</button>
+  </div>
+  <div *ngIf="!isFormViewOpen" class="table-overall">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Item Name</th>
+          <th>Item Description</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of computerParts;let i = index">
+          <td>{{i + 1}}</td>
+          <td>{{item?.name}}</td>
+          <td>{{item?.description}}</td>
+          <td>{{item?.quantity}}</td>
+          <td>${{item?.price}}</td>
+          <td >
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <img src="../../../../../assets/img/pencil.png" alt="edit" class="edit-icon" (click)="onEditItem(item)">
+              </div>
+              <div>
+                <img src="../../../../../assets/img/delete.png" alt="delete" class="delete-icon" (click)="onDeleteItem(item)">
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div *ngIf="isFormViewOpen">
+    <app-computer-parts-form [computerPart]="editItemDetails" [isEditMode]="isEditMode" (isFormViewOpen)="onCancelHandler($event)"></app-computer-parts-form>
+  </div>
+</div>
